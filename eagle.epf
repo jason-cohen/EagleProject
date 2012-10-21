@@ -1,0 +1,26 @@
+[Eagle]
+Version="06 02 00"
+Platform="Windows"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Program Files (x86)/EAGLE-5.11.0/lbr/16F88.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-5.11.0/lbr/16f882.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-5.11.0/lbr/LilyPad-Wearables.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-5.11.0/lbr/MCP41010.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-5.11.0/lbr/SparkFun.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-5.11.0/lbr/microchip-5.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-5.11.0/lbr/microchip-dspic.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="0 0 783 831"
+State=1
+Number=0
+
+[Desktop]
+Screen="1600 900"
+Window="Win_1"

@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from board.sch at 11/24/2012 11:14:00 PM
+Exported from board.sch at 11/24/2012 11:27:18 PM
 
 EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
 
@@ -10,7 +10,7 @@ Part     Pad      Pin        Dir      Net
          2        GND        pas      GND
          3        VI         in       N$18
 
-ADC_BIAS 1        1          pas      N$19
+ADC_BIAS 1        1          pas      ADC_BIAS-
          2        2          pas               *** unconnected ***
 
 CX1      1        1          pas      N$3
@@ -19,8 +19,8 @@ CX1      1        1          pas      N$3
 CX2      1        1          pas      GND
          2        2          pas      N$10
 
-CX3      1        1          pas      N$20
-         2        2          pas      N$19
+CX3      1        1          pas      ADC_BIAS+
+         2        2          pas      ADC_BIAS-
 
 C_TANTALUM 1        1          pas      N$4
          2        2          pas      GND
@@ -66,24 +66,24 @@ LCD_DISPLAY 1        GND        pwr      GND
          15       NC         nc                *** unconnected ***
          16       NC         nc                *** unconnected ***
 
-MUX      1        A0         in       N$17
-         2        EN         in       N$11
+MUX      1        A0         in       MUX_0
+         2        EN         in       MUX_EN
          3        V-         pwr      GND
          4        NO1        pas               *** unconnected ***
          5        NO2        pas               *** unconnected ***
          6        NO3        pas               *** unconnected ***
          7        NO4        pas               *** unconnected ***
-         8        COM        pas      N$13
-         9        NO8        pas      N$1
-         10       NO7        pas      N$15
-         11       NO6        pas      N$16
+         8        COM        pas      OUTPUT_CKT
+         9        NO8        pas      SCALE_0
+         10       NO7        pas      SCALE_1
+         11       NO6        pas      SCALE_2
          12       NO5        pas      ADC
          13       V+         pwr      VCC
          14       GND        pwr      GND
-         15       A2         in       N$12
-         16       A1         in       N$14
+         15       A2         in       MUX_2
+         16       A1         in       MUX_1
 
-OUTPUTFROMCKT 1        1          pas      N$13
+OUTPUTFROMCKT 1        1          pas      OUTPUT_CKT
          2        GND        pwr      GND
          3        GND        pwr      GND
          4        GND        pwr      GND
@@ -92,10 +92,10 @@ OUTPUTFROMCKT 1        1          pas      N$13
 PIC24HJ128GP502 1        MCLR       pas      N$2
          2        AN0/VREF+/CN2/RA0 pas               *** unconnected ***
          3        AN1/VREF-/CN3/RA1 pas      ADC
-         4        PGED1/AN2/C2IN-/RP0/CN4/RB0 pas      N$17
-         5        PGEC1/AN3/C2IN+/RP1/CN5/RB1 pas      N$14
-         6        AN4/C1IN-/RP2/CN6/RB2 pas      N$12
-         7        AN5/C1IN+/RP3/CN7/RB3 pas      N$11
+         4        PGED1/AN2/C2IN-/RP0/CN4/RB0 pas      MUX_0
+         5        PGEC1/AN3/C2IN+/RP1/CN5/RB1 pas      MUX_1
+         6        AN4/C1IN-/RP2/CN6/RB2 pas      MUX_2
+         7        AN5/C1IN+/RP3/CN7/RB3 pas      MUX_EN
          8        VSS_2      pas      GND
          9        OSC1/CLKI/CN30/RA2 pas      EXECUTE_BUTTON
          10       OSC2/CLKO/CN29/PMA0/RA3 pas      INCREASE_BUTTON
@@ -115,8 +115,8 @@ PIC24HJ128GP502 1        MCLR       pas      N$2
          24       AN11/RP13/CN13/PMRD/RB13 pas      LCD_E
          25       AN10/RTCC/RP14/CN12/PMWR/RB14 pas      LCD_RW
          26       AN9/RP15/CN11/PMCS1/RB15 pas      LCD_RS
-         27       AVSS       pas      N$19
-         28       AVDD       pas      N$20
+         27       AVSS       pas      ADC_BIAS-
+         28       AVDD       pas      ADC_BIAS+
 
 POWER_SWITCH 1        O          pas               *** unconnected ***
          2        P          pas      N$21
@@ -124,19 +124,19 @@ POWER_SWITCH 1        O          pas               *** unconnected ***
          B        B          pas               *** unconnected ***
          B1       B1         pas               *** unconnected ***
 
-R1       1        1          pas      N$1
+R1       1        1          pas      SCALE_0
          2        2          pas      ADC
 
 R2       1        1          pas      GND
          2        2          pas      ADC
 
 R3       1        1          pas      ADC
-         2        2          pas      N$15
+         2        2          pas      SCALE_1
 
 R4       1        1          pas      ADC
          2        2          pas      GND
 
-R5       1        1          pas      N$16
+R5       1        1          pas      SCALE_2
          2        2          pas      ADC
 
 R6       1        1          pas      GND

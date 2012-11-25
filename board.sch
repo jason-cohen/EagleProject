@@ -8665,7 +8665,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <wire x1="210.82" y1="27.94" x2="160.02" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="SCALE_0" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="53.34" x2="-68.58" y2="53.34" width="0.1524" layer="91"/>
@@ -8712,7 +8712,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <junction x="-10.16" y="30.48"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="OUTPUT_CKT" class="0">
 <segment>
 <pinref part="OUTPUTFROMCKT" gate="G$1" pin="1"/>
 <wire x1="-83.82" y1="7.62" x2="-96.52" y2="7.62" width="0.1524" layer="91"/>
@@ -8721,7 +8721,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <wire x1="-96.52" y1="35.56" x2="-96.52" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="SCALE_1" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="33.02" x2="-55.88" y2="50.8" width="0.1524" layer="91"/>
@@ -8729,7 +8729,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <wire x1="-55.88" y1="50.8" x2="-68.58" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="SCALE_2" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="12.7" x2="-58.42" y2="12.7" width="0.1524" layer="91"/>
@@ -8738,7 +8738,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <wire x1="-58.42" y1="48.26" x2="-68.58" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="ADC_BIAS+" class="0">
 <segment>
 <pinref part="CX3" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
@@ -8750,7 +8750,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <wire x1="160.02" y1="63.5" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="ADC_BIAS-" class="0">
 <segment>
 <pinref part="ADC_BIAS" gate="G$1" pin="1"/>
 <pinref part="CX3" gate="G$1" pin="2"/>
@@ -8826,7 +8826,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <wire x1="-7.62" y1="27.94" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="MUX_EN" class="0">
 <segment>
 <pinref part="PIC24HJ128GP502" gate="A" pin="AN5/C1IN+/RP3/CN7/RB3"/>
 <wire x1="-7.62" y1="45.72" x2="-38.1" y2="45.72" width="0.1524" layer="91"/>
@@ -8835,7 +8835,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <wire x1="-38.1" y1="68.58" x2="-68.58" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="MUX_2" class="0">
 <segment>
 <pinref part="PIC24HJ128GP502" gate="A" pin="AN4/C1IN-/RP2/CN6/RB2"/>
 <wire x1="-7.62" y1="48.26" x2="-22.86" y2="48.26" width="0.1524" layer="91"/>
@@ -8848,7 +8848,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <pinref part="MUX" gate="G$1" pin="A2"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="MUX_1" class="0">
 <segment>
 <pinref part="PIC24HJ128GP502" gate="A" pin="PGEC1/AN3/C2IN+/RP1/CN5/RB1"/>
 <wire x1="-7.62" y1="50.8" x2="-33.02" y2="50.8" width="0.1524" layer="91"/>
@@ -8857,7 +8857,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <wire x1="-33.02" y1="60.96" x2="-68.58" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="MUX_0" class="0">
 <segment>
 <pinref part="PIC24HJ128GP502" gate="A" pin="PGED1/AN2/C2IN-/RP0/CN4/RB0"/>
 <wire x1="-7.62" y1="53.34" x2="-17.78" y2="53.34" width="0.1524" layer="91"/>

@@ -8401,21 +8401,21 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <part name="C_TANTALUM" library="resistor" deviceset="CX" device="XC10B5" value="10u"/>
 <part name="CX2" library="resistor" deviceset="CX" device="XC10B5" value="0.1u"/>
 <part name="CX3" library="resistor" deviceset="CX" device="XC10B5" value="0.1u"/>
-<part name="IC1" library="maxim" deviceset="MAX308CPE" device=""/>
+<part name="MUX" library="maxim" deviceset="MAX308CPE" device=""/>
 <part name="OUTPUTFROMCKT" library="con-coax" deviceset="A1944-50" device=""/>
 <part name="5VOLTREGULATOR" library="linear" deviceset="78*" device="Z" technology="L05"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device="/90"/>
+<part name="EXTERNAL_POWER" library="pinhead" deviceset="PINHD-1X2" device="/90"/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device="/90"/>
+<part name="ADC_BIAS" library="pinhead" deviceset="PINHD-1X2" device="/90"/>
 <part name="INPUTFROMCKT" library="con-coax" deviceset="A1944-50" device=""/>
-<part name="DIS1" library="display-lcd" deviceset="TUXGR_16X2_R2" device=""/>
+<part name="LCD_DISPLAY" library="display-lcd" deviceset="TUXGR_16X2_R2" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R9" library="resistor" deviceset="R-US_" device="0204/2V" value="1k"/>
-<part name="S1" library="switch" deviceset="316-917" device=""/>
-<part name="S2" library="switch" deviceset="55?" device="01"/>
-<part name="S3" library="switch" deviceset="55?" device="01"/>
-<part name="S4" library="switch" deviceset="55?" device="01"/>
+<part name="POWER_SWITCH" library="switch" deviceset="316-917" device=""/>
+<part name="EXECUTE_BUTTON" library="switch" deviceset="55?" device="01"/>
+<part name="INCREASE_BUTTON" library="switch" deviceset="55?" device="01"/>
+<part name="DECREASE_BUTTON" library="switch" deviceset="55?" device="01"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
 <part name="R11" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
@@ -8454,21 +8454,21 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <instance part="C_TANTALUM" gate="G$1" x="165.1" y="40.64" rot="R90"/>
 <instance part="CX2" gate="G$1" x="-25.4" y="40.64"/>
 <instance part="CX3" gate="G$1" x="200.66" y="73.66" rot="R90"/>
-<instance part="IC1" gate="G$1" x="-81.28" y="50.8" rot="R180"/>
+<instance part="MUX" gate="G$1" x="-81.28" y="50.8" rot="R180"/>
 <instance part="OUTPUTFROMCKT" gate="G$1" x="-81.28" y="7.62" rot="R180"/>
 <instance part="5VOLTREGULATOR" gate="A1" x="40.64" y="114.3"/>
 <instance part="GND6" gate="1" x="40.64" y="99.06"/>
-<instance part="JP1" gate="G$1" x="12.7" y="111.76"/>
+<instance part="EXTERNAL_POWER" gate="G$1" x="12.7" y="111.76"/>
 <instance part="P+3" gate="VCC" x="63.5" y="114.3" rot="R270"/>
-<instance part="JP2" gate="G$1" x="200.66" y="81.28" rot="R270"/>
+<instance part="ADC_BIAS" gate="G$1" x="200.66" y="81.28" rot="R270"/>
 <instance part="INPUTFROMCKT" gate="G$1" x="134.62" y="5.08" rot="R180"/>
-<instance part="DIS1" gate="G$1" x="172.72" y="104.14"/>
+<instance part="LCD_DISPLAY" gate="G$1" x="172.72" y="104.14"/>
 <instance part="GND7" gate="1" x="154.94" y="78.74"/>
 <instance part="R9" gate="G$1" x="160.02" y="88.9" rot="R90"/>
-<instance part="S1" gate="1" x="17.78" y="91.44"/>
-<instance part="S2" gate="G$1" x="17.78" y="7.62"/>
-<instance part="S3" gate="G$1" x="38.1" y="7.62"/>
-<instance part="S4" gate="G$1" x="55.88" y="7.62"/>
+<instance part="POWER_SWITCH" gate="1" x="17.78" y="91.44"/>
+<instance part="EXECUTE_BUTTON" gate="G$1" x="17.78" y="7.62"/>
+<instance part="INCREASE_BUTTON" gate="G$1" x="38.1" y="7.62"/>
+<instance part="DECREASE_BUTTON" gate="G$1" x="55.88" y="7.62"/>
 <instance part="R10" gate="G$1" x="-25.4" y="25.4" rot="R90"/>
 <instance part="R11" gate="G$1" x="-17.78" y="25.4" rot="R90"/>
 <instance part="R12" gate="G$1" x="-10.16" y="25.4" rot="R90"/>
@@ -8481,7 +8481,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <segment>
 <wire x1="-60.96" y1="-7.62" x2="-40.64" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="-7.62" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="NO5"/>
+<pinref part="MUX" gate="G$1" pin="NO5"/>
 <wire x1="-60.96" y1="45.72" x2="-68.58" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="PIC24HJ128GP502" gate="A" pin="AN1/VREF-/CN3/RA1"/>
 <wire x1="-20.32" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
@@ -8542,13 +8542,13 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <segment>
 <pinref part="CX1" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="IC1" gate="G$1" pin="V-"/>
+<pinref part="MUX" gate="G$1" pin="V-"/>
 <wire x1="-93.98" y1="68.58" x2="-93.98" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="73.66" x2="-22.86" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="73.66" x2="-22.86" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-17.78" y="66.04"/>
-<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="MUX" gate="G$1" pin="GND"/>
 <wire x1="-93.98" y1="63.5" x2="-93.98" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-93.98" y="68.58"/>
 <pinref part="OUTPUTFROMCKT" gate="G$1" pin="GND"/>
@@ -8571,7 +8571,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <junction x="40.64" y="106.68"/>
 </segment>
 <segment>
-<pinref part="DIS1" gate="G$1" pin="GND"/>
+<pinref part="LCD_DISPLAY" gate="G$1" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="154.94" y1="93.98" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -8580,21 +8580,21 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <junction x="154.94" y="83.82"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="1B"/>
+<pinref part="EXECUTE_BUTTON" gate="G$1" pin="1B"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="12.7" y1="5.08" x2="12.7" y2="0" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="1A"/>
+<pinref part="EXECUTE_BUTTON" gate="G$1" pin="1A"/>
 <wire x1="12.7" y1="7.62" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
 <junction x="12.7" y="5.08"/>
 <wire x1="12.7" y1="5.08" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="S3" gate="G$1" pin="1B"/>
+<pinref part="INCREASE_BUTTON" gate="G$1" pin="1B"/>
 <wire x1="12.7" y1="2.54" x2="33.02" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="2.54" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="S3" gate="G$1" pin="1A"/>
+<pinref part="INCREASE_BUTTON" gate="G$1" pin="1A"/>
 <wire x1="33.02" y1="7.62" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
 <junction x="33.02" y="5.08"/>
-<pinref part="S4" gate="G$1" pin="1A"/>
-<pinref part="S4" gate="G$1" pin="1B"/>
+<pinref part="DECREASE_BUTTON" gate="G$1" pin="1A"/>
+<pinref part="DECREASE_BUTTON" gate="G$1" pin="1B"/>
 <wire x1="50.8" y1="7.62" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="5.08" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
 <junction x="50.8" y="5.08"/>
@@ -8612,7 +8612,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-<pinref part="IC1" gate="G$1" pin="V+"/>
+<pinref part="MUX" gate="G$1" pin="V+"/>
 <wire x1="-93.98" y1="58.42" x2="-96.52" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="58.42" x2="-96.52" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="88.9" x2="-17.78" y2="88.9" width="0.1524" layer="91"/>
@@ -8622,7 +8622,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <pinref part="5VOLTREGULATOR" gate="A1" pin="VO"/>
 <wire x1="50.8" y1="114.3" x2="58.42" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
-<pinref part="DIS1" gate="G$1" pin="VCC"/>
+<pinref part="LCD_DISPLAY" gate="G$1" pin="VCC"/>
 <wire x1="58.42" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="93.98" x2="58.42" y2="114.3" width="0.1524" layer="91"/>
@@ -8669,7 +8669,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="53.34" x2="-68.58" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="NO8"/>
+<pinref part="MUX" gate="G$1" pin="NO8"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8716,7 +8716,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <segment>
 <pinref part="OUTPUTFROMCKT" gate="G$1" pin="1"/>
 <wire x1="-83.82" y1="7.62" x2="-96.52" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="COM"/>
+<pinref part="MUX" gate="G$1" pin="COM"/>
 <wire x1="-93.98" y1="35.56" x2="-96.52" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="35.56" x2="-96.52" y2="7.62" width="0.1524" layer="91"/>
 </segment>
@@ -8725,7 +8725,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="33.02" x2="-55.88" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="NO7"/>
+<pinref part="MUX" gate="G$1" pin="NO7"/>
 <wire x1="-55.88" y1="50.8" x2="-68.58" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8734,7 +8734,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="12.7" x2="-58.42" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="12.7" x2="-58.42" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="NO6"/>
+<pinref part="MUX" gate="G$1" pin="NO6"/>
 <wire x1="-58.42" y1="48.26" x2="-68.58" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8752,7 +8752,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="ADC_BIAS" gate="G$1" pin="1"/>
 <pinref part="CX3" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="83.82" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="83.82" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
@@ -8765,7 +8765,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 </net>
 <net name="LCD_RS" class="0">
 <segment>
-<pinref part="DIS1" gate="G$1" pin="RS"/>
+<pinref part="LCD_DISPLAY" gate="G$1" pin="RS"/>
 <wire x1="162.56" y1="93.98" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="PIC24HJ128GP502" gate="A" pin="AN9/RP15/CN11/PMCS1/RB15"/>
 <wire x1="162.56" y1="55.88" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
@@ -8774,7 +8774,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <net name="LCD_RW" class="0">
 <segment>
 <pinref part="PIC24HJ128GP502" gate="A" pin="AN10/RTCC/RP14/CN12/PMWR/RB14"/>
-<pinref part="DIS1" gate="G$1" pin="R/W"/>
+<pinref part="LCD_DISPLAY" gate="G$1" pin="R/W"/>
 <wire x1="160.02" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="53.34" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
 </segment>
@@ -8782,14 +8782,14 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <net name="LCD_E" class="0">
 <segment>
 <pinref part="PIC24HJ128GP502" gate="A" pin="AN11/RP13/CN13/PMRD/RB13"/>
-<pinref part="DIS1" gate="G$1" pin="E"/>
+<pinref part="LCD_DISPLAY" gate="G$1" pin="E"/>
 <wire x1="160.02" y1="50.8" x2="167.64" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="50.8" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_D0" class="0">
 <segment>
-<pinref part="DIS1" gate="G$1" pin="D0"/>
+<pinref part="LCD_DISPLAY" gate="G$1" pin="D0"/>
 <wire x1="170.18" y1="93.98" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="PIC24HJ128GP502" gate="A" pin="AN12/RP12/CN14/PMD0/RB12"/>
 <wire x1="170.18" y1="48.26" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
@@ -8798,7 +8798,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <net name="LCD_D1" class="0">
 <segment>
 <pinref part="PIC24HJ128GP502" gate="A" pin="PGEC2/TMS/RP11/CN15/PMD1/RB11"/>
-<pinref part="DIS1" gate="G$1" pin="D1"/>
+<pinref part="LCD_DISPLAY" gate="G$1" pin="D1"/>
 <wire x1="160.02" y1="45.72" x2="172.72" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="45.72" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
 </segment>
@@ -8806,20 +8806,20 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <net name="LCD_D2" class="0">
 <segment>
 <pinref part="PIC24HJ128GP502" gate="A" pin="PGED2/TDI/RP10/CN16/PMD2/RB10"/>
-<pinref part="DIS1" gate="G$1" pin="D2"/>
+<pinref part="LCD_DISPLAY" gate="G$1" pin="D2"/>
 <wire x1="160.02" y1="43.18" x2="175.26" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="43.18" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="DIS1" gate="G$1" pin="CONTR"/>
+<pinref part="LCD_DISPLAY" gate="G$1" pin="CONTR"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="LCD_D3" class="0">
 <segment>
-<pinref part="DIS1" gate="G$1" pin="D3"/>
+<pinref part="LCD_DISPLAY" gate="G$1" pin="D3"/>
 <wire x1="177.8" y1="20.32" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="20.32" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="PIC24HJ128GP502" gate="A" pin="PGED3/ASDA1/RP5/CN27/PMD7/RB5"/>
@@ -8831,7 +8831,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <pinref part="PIC24HJ128GP502" gate="A" pin="AN5/C1IN+/RP3/CN7/RB3"/>
 <wire x1="-7.62" y1="45.72" x2="-38.1" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="45.72" x2="-38.1" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="EN"/>
+<pinref part="MUX" gate="G$1" pin="EN"/>
 <wire x1="-38.1" y1="68.58" x2="-68.58" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8845,7 +8845,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <wire x1="-35.56" y1="63.5" x2="-22.86" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="63.5" x2="-22.86" y2="48.26" width="0.1524" layer="91"/>
 <junction x="-22.86" y="48.26"/>
-<pinref part="IC1" gate="G$1" pin="A2"/>
+<pinref part="MUX" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -8853,7 +8853,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <pinref part="PIC24HJ128GP502" gate="A" pin="PGEC1/AN3/C2IN+/RP1/CN5/RB1"/>
 <wire x1="-7.62" y1="50.8" x2="-33.02" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="50.8" x2="-33.02" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A1"/>
+<pinref part="MUX" gate="G$1" pin="A1"/>
 <wire x1="-33.02" y1="60.96" x2="-68.58" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8862,7 +8862,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <pinref part="PIC24HJ128GP502" gate="A" pin="PGED1/AN2/C2IN-/RP0/CN4/RB0"/>
 <wire x1="-7.62" y1="53.34" x2="-17.78" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="53.34" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A0"/>
+<pinref part="MUX" gate="G$1" pin="A0"/>
 <wire x1="-17.78" y1="58.42" x2="-68.58" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8870,22 +8870,22 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <segment>
 <pinref part="5VOLTREGULATOR" gate="A1" pin="VI"/>
 <wire x1="22.86" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="S1" gate="1" pin="S"/>
+<pinref part="POWER_SWITCH" gate="1" pin="S"/>
 <wire x1="22.86" y1="114.3" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="S1" gate="1" pin="P"/>
+<pinref part="POWER_SWITCH" gate="1" pin="P"/>
 <wire x1="20.32" y1="86.36" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="86.36" x2="5.08" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="EXTERNAL_POWER" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="114.3" x2="10.16" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EXECUTE_BUTTON" class="0">
 <segment>
-<pinref part="S2" gate="G$1" pin="NC"/>
+<pinref part="EXECUTE_BUTTON" gate="G$1" pin="NC"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="10.16" x2="-25.4" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="10.16" x2="-25.4" y2="20.32" width="0.1524" layer="91"/>
@@ -8898,7 +8898,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 </net>
 <net name="INCREASE_BUTTON" class="0">
 <segment>
-<pinref part="S3" gate="G$1" pin="NC"/>
+<pinref part="INCREASE_BUTTON" gate="G$1" pin="NC"/>
 <wire x1="43.18" y1="10.16" x2="43.18" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="12.7" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
@@ -8912,7 +8912,7 @@ Source: www.e-switch.com .. 5500.pdf</description>
 </net>
 <net name="DECREASE_BUTTON" class="0">
 <segment>
-<pinref part="S4" gate="G$1" pin="NC"/>
+<pinref part="DECREASE_BUTTON" gate="G$1" pin="NC"/>
 <wire x1="60.96" y1="10.16" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="15.24" x2="-10.16" y2="15.24" width="0.1524" layer="91"/>

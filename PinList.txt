@@ -1,0 +1,176 @@
+Pinlist
+
+Exported from board.sch at 11/24/2012 11:14:00 PM
+
+EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+5VOLTREGULATOR 1        VO         pas      VCC
+         2        GND        pas      GND
+         3        VI         in       N$18
+
+ADC_BIAS 1        1          pas      N$19
+         2        2          pas               *** unconnected ***
+
+CX1      1        1          pas      N$3
+         2        2          pas      GND
+
+CX2      1        1          pas      GND
+         2        2          pas      N$10
+
+CX3      1        1          pas      N$20
+         2        2          pas      N$19
+
+C_TANTALUM 1        1          pas      N$4
+         2        2          pas      GND
+
+DECREASE_BUTTON 1A       1A         pas      GND
+         1B       1B         pas      GND
+         NC       NC         pas      DECREASE_BUTTON
+         NO       NO         pas               *** unconnected ***
+
+EXECUTE_BUTTON 1A       1A         pas      GND
+         1B       1B         pas      GND
+         NC       NC         pas      EXECUTE_BUTTON
+         NO       NO         pas               *** unconnected ***
+
+EXTERNAL_POWER 1        1          pas      N$21
+         2        2          pas               *** unconnected ***
+
+INCREASE_BUTTON 1A       1A         pas      GND
+         1B       1B         pas      GND
+         NC       NC         pas      INCREASE_BUTTON
+         NO       NO         pas               *** unconnected ***
+
+INPUTFROMCKT 1        1          pas               *** unconnected ***
+         2        GND        pwr      GND
+         3        GND        pwr      GND
+         4        GND        pwr      GND
+         5        GND        pwr      GND
+
+LCD_DISPLAY 1        GND        pwr      GND
+         2        VCC        pwr      VCC
+         3        CONTR      in       N$27
+         4        RS         in       LCD_RS
+         5        R/W        in       LCD_RW
+         6        E          in       LCD_E
+         7        D0         in       LCD_D0
+         8        D1         in       LCD_D1
+         9        D2         in       LCD_D2
+         10       D3         in       LCD_D3
+         11       D4         in                *** unconnected ***
+         12       D5         in                *** unconnected ***
+         13       D6         in                *** unconnected ***
+         14       D7         in                *** unconnected ***
+         15       NC         nc                *** unconnected ***
+         16       NC         nc                *** unconnected ***
+
+MUX      1        A0         in       N$17
+         2        EN         in       N$11
+         3        V-         pwr      GND
+         4        NO1        pas               *** unconnected ***
+         5        NO2        pas               *** unconnected ***
+         6        NO3        pas               *** unconnected ***
+         7        NO4        pas               *** unconnected ***
+         8        COM        pas      N$13
+         9        NO8        pas      N$1
+         10       NO7        pas      N$15
+         11       NO6        pas      N$16
+         12       NO5        pas      ADC
+         13       V+         pwr      VCC
+         14       GND        pwr      GND
+         15       A2         in       N$12
+         16       A1         in       N$14
+
+OUTPUTFROMCKT 1        1          pas      N$13
+         2        GND        pwr      GND
+         3        GND        pwr      GND
+         4        GND        pwr      GND
+         5        GND        pwr      GND
+
+PIC24HJ128GP502 1        MCLR       pas      N$2
+         2        AN0/VREF+/CN2/RA0 pas               *** unconnected ***
+         3        AN1/VREF-/CN3/RA1 pas      ADC
+         4        PGED1/AN2/C2IN-/RP0/CN4/RB0 pas      N$17
+         5        PGEC1/AN3/C2IN+/RP1/CN5/RB1 pas      N$14
+         6        AN4/C1IN-/RP2/CN6/RB2 pas      N$12
+         7        AN5/C1IN+/RP3/CN7/RB3 pas      N$11
+         8        VSS_2      pas      GND
+         9        OSC1/CLKI/CN30/RA2 pas      EXECUTE_BUTTON
+         10       OSC2/CLKO/CN29/PMA0/RA3 pas      INCREASE_BUTTON
+         11       SOSCI/RP4/CN1/PMBE/RB4 pas      DECREASE_BUTTON
+         12       SOSCO/T1CK/CN0/PMA1/RA4 pas      VCO
+         13       VDD        pas      N$10
+         14       PGED3/ASDA1/RP5/CN27/PMD7/RB5 pas      LCD_D3
+         15       PGEC3/ASCL1/RP6/CN24/PMD6/RB6 pas      N$9
+         16       INT0/RP7/CN23/PMD5/RB7 pas      N$6
+         17       TCK/SCL1/RP8/CN22/PMD4/RB8 pas      N$8
+         18       TDO/SDA1/RP9/CN21/PMD3/RB9 pas      N$7
+         19       VSS        pas      GND
+         20       VCAP/VDDCORE pas      N$4
+         21       PGED2/TDI/RP10/CN16/PMD2/RB10 pas      LCD_D2
+         22       PGEC2/TMS/RP11/CN15/PMD1/RB11 pas      LCD_D1
+         23       AN12/RP12/CN14/PMD0/RB12 pas      LCD_D0
+         24       AN11/RP13/CN13/PMRD/RB13 pas      LCD_E
+         25       AN10/RTCC/RP14/CN12/PMWR/RB14 pas      LCD_RW
+         26       AN9/RP15/CN11/PMCS1/RB15 pas      LCD_RS
+         27       AVSS       pas      N$19
+         28       AVDD       pas      N$20
+
+POWER_SWITCH 1        O          pas               *** unconnected ***
+         2        P          pas      N$21
+         3        S          pas      N$18
+         B        B          pas               *** unconnected ***
+         B1       B1         pas               *** unconnected ***
+
+R1       1        1          pas      N$1
+         2        2          pas      ADC
+
+R2       1        1          pas      GND
+         2        2          pas      ADC
+
+R3       1        1          pas      ADC
+         2        2          pas      N$15
+
+R4       1        1          pas      ADC
+         2        2          pas      GND
+
+R5       1        1          pas      N$16
+         2        2          pas      ADC
+
+R6       1        1          pas      GND
+         2        2          pas      ADC
+
+R7       1        1          pas      N$2
+         2        2          pas      N$3
+
+R8       1        1          pas      VCC
+         2        2          pas      N$3
+
+R9       1        1          pas      GND
+         2        2          pas      N$27
+
+R10      1        1          pas      EXECUTE_BUTTON
+         2        2          pas      N$10
+
+R11      1        1          pas      INCREASE_BUTTON
+         2        2          pas      N$10
+
+R12      1        1          pas      DECREASE_BUTTON
+         2        2          pas      N$10
+
+SDCARD   1        CS         io       N$9
+         2        DI         io       N$7
+         3        GND        io       GND
+         4        VCC        io       VCC
+         5        SCK        io       N$6
+         6        GND1       io       GND
+         7        DO         io       N$8
+         8        IRQ        io                *** unconnected ***
+         9        P9         io                *** unconnected ***
+         14       SHIELD     io                *** unconnected ***
+         CD       WP         io                *** unconnected ***
+         SW       SW         io                *** unconnected ***
+         WP       CD         io                *** unconnected ***
+
